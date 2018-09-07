@@ -16,9 +16,11 @@ def line(deli)
   end
 end 
 
-def take_a_number(deli, name)
-  deli << name
-  puts "Welcome, #{name}. You are number #{deli.length} in line."
+@total_num = 0
+def take_a_number(deli)
+  @total_num += 1
+  deli << @total_num
+  puts "You are number #{@total_num} in line."
 end 
 
 def now_serving(deli)
